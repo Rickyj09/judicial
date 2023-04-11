@@ -14,10 +14,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<script src="https://kit.fontawesome.com/e2eedfb962.js" crossorigin="anonymous"></script>
-
+   
    
      
-    <ul class="nav nav-pills nav-justified fixed-top navbar-light bg-info" >
+    <ul class="nav nav-pills nav-expand-lg nav-justified fixed-top bg-info bg-light "  style="background-color: rgb(49, 44, 44);" >
       <li class="nav-item">
         <a href="{{ url_for ('inicio')}}">
           <img src="/static/img/logo1.png" class="logo">
@@ -32,10 +32,13 @@
         <li class="nav-item colnav">
             <a class="nav-link"  href="{{ url_for('historia')}}">SERVICIOS</a>
         </li>
-
         <li class="nav-item colnav">
           <a class="nav-link"  href="{{ url_for('historia')}}">NUESTRO EQUIPO</a>
       </li>
+        <li class="nav-item colnav">
+          <a class="nav-link"  href="{{ url_for('contacto')}}">CONTACTANOS</a>
+      </li>
+        
       </ul>
    <hr>
     
@@ -43,7 +46,7 @@
 
   <div id="sfcm95pk38ws11zdfwdw5bs73jsyryezjhq"></div><script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=m95pk38ws11zdfwdw5bs73jsyryezjhq&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas para tumblr"><img src="https://counter9.stat.ovh/private/contadorvisitasgratis.php?c=m95pk38ws11zdfwdw5bs73jsyryezjhq" border="0" title="contador de visitas para tumblr" alt="contador de visitas para tumblr"></a></noscript>
 </head>
-<body background="/static/img/fondo1.jpg">
+<body background="/static/img/fondo11.jpeg">
    <div class="container">
     <center><h1></h1></center>
          {% block content %}{% endblock %}

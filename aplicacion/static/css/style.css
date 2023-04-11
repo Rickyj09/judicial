@@ -116,3 +116,18 @@ grid-row-gap: 2px;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.2);
 }
+
+.white-text {
+  color: white;
+}
+
+.dark-background {
+  background-color: #383838; /* Cambia este valor por cualquier otro color en escala de grises que desees */
+}
+.black-background {
+  background-color: #000000;
+}
+
+.bg-info {
+  background-color: #383838; /* Cambia este valor por cualquier otro color en escala de grises que desees */
+}
