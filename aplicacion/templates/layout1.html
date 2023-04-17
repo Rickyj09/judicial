@@ -1,181 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="teakowndo, defensa, arte marcial,COVID-19">
-    <title>{%block title%} {%endblock%}</title>
-    <link rel="shortcut icon" href="/static/img/favicon.png">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}" />
-    <link rel="stylesheet" href="static/css/normalize.css">
-		<link rel="stylesheet" href="static/css/style.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-		<script src="https://kit.fontawesome.com/e2eedfb962.js" crossorigin="anonymous"></script>
-   
-   
-     
-    <ul class="nav nav-pills nav-expand-lg nav-justified fixed-top bg-info bg-dark "  style="background-color: rgb(49, 44, 44);" >
-      <li class="nav-item">
-        <a href="{{ url_for ('inicio')}}">
-          <img src="/static/img/logo1.png" class="logo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="teakowndo, defensa, arte marcial, COVID-19" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="/static/img/favicon.png" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="static/css/normalize.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://kit.fontawesome.com/e2eedfb962.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-image: url('/static/img/fondo11.jpeg'); background-size: cover;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-info bg-dark" style="background-color: rgb(49, 44, 44);">
+      <div class="container">
+        <a class="navbar-brand" href="{{ url_for('inicio') }}">
+          <img src="/static/img/logo1.png" class="logo" />
         </a>
-      </li>
-      <li class="nav-item colnav" >
-        <a class="nav-link text-white"  href="{{ url_for('firma')}}">QUISHPECUADRADO ABOGADOS</a>
-      </li>
-        <li class="nav-item colnav">
-          <a class="nav-link text-white"  href="{{ url_for('nosotros')}}">NUESTRO CONOCIMIENTO</a>
-        </li>     
-        <li class="nav-item colnav">
-            <a class="nav-link text-white"  href="{{ url_for('historia')}}">SERVICIOS</a>
-        </li>
-        <li class="nav-item colnav">
-          <a class="nav-link text-white"  href="{{ url_for('historia')}}">NUESTRO EQUIPO</a>
-      </li>
-        <li class="nav-item colnav">
-          <a class="nav-link text-white"  href="{{ url_for('contacto')}}">CONTACTANOS</a>
-      </li>
-        
-      </ul>
-   <hr>
-    
-
-
-  <div id="sfcm95pk38ws11zdfwdw5bs73jsyryezjhq"></div><script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=m95pk38ws11zdfwdw5bs73jsyryezjhq&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas para tumblr"><img src="https://counter9.stat.ovh/private/contadorvisitasgratis.php?c=m95pk38ws11zdfwdw5bs73jsyryezjhq" border="0" title="contador de visitas para tumblr" alt="contador de visitas para tumblr"></a></noscript>
-</head>
-<body background="/static/img/fondo11.jpeg">
-   <div class="container">
-    <center><h1></h1></center>
-         {% block content %}{% endblock %}
-         <div class="container my-5">
-          <!-- Footer -->
-          <footer
-                  class="text-center text-lg-start text-white"
-                  style="background-color: #929fba"
-                  >
-            <!-- Grid container -->
-            <div class="container p-4 pb-0">
-              <!-- Section: Links -->
-              <section class="">
-                <!--Grid row-->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">
-                      QUISHPECUADRADO 
-                    </h6>
-                    <p>Profesionales del Derecho,  con amplios conocimientos y experiencia en materia: Empresarial, Societario, Penal, Civil, Constitucional y en diversas áreas del Derecho, lo que nos permite brindar asesoramiento y representación legal integral,  conforme a las exigencias actuales con eficiencia y eficacia.</p>
-                  </div>
-                  <!-- Grid column -->
-        
-                  <hr class="w-100 clearfix d-md-none" />
-        
-                  <!-- Grid column -->
-                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">ABOGADOS</h6>
-                    <p>
-                      <a href="{{ url_for('firma')}}" class="text-white">LA FIRMA</a>
-                    </p>
-                    <p>
-                      <a class="text-white">NUESTRO CONOCIMIENTO</a>
-                    </p>
-                    <p>
-                      <a class="text-white">SERVICIOS</a>
-                    </p>
-                    <p>
-                      <a class="text-white">NUESTRO EQUIPO</a>
-                    </p>
-                    
-                  </div>
-                  <!-- Grid column -->
-        
-                  <hr class="w-100 clearfix d-md-none" />
-        
-                  <!-- Grid column -->
-                  <hr class="w-100 clearfix d-md-none" />
-        
-                  <!-- Grid column -->
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                    <p><i class="fas fa-home mr-3"></i>Carapungo</p>
-                    <p><i class="fas fa-envelope mr-3"></i>juridico@hotmail.com</p>
-                    <p><i class="fas fa-phone mr-3"></i>0997125577</p>
-                    <p><i class="fas fa-print mr-3"></i> </p>
-                  </div>
-                  <!-- Grid column -->
-        
-                  <!-- Grid column -->
-                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Síguenos</h6>
-        
-                    <!-- Facebook -->
-                    <a
-                       class="btn btn-primary btn-floating m-1"
-                       style="background-color: #3b5998"
-                       href="https://www.facebook.com/club.apolo1"
-                       role="button"
-                       target ="_blank"
-                       ><i class="fab fa-facebook-f"></i
-                      ></a>
-        
-                   
-        
-                    <!-- Instagram -->
-                    <a
-                       class="btn btn-primary btn-floating m-1"
-                       style="background-color: #ac2bac"
-                       href="https://instagram.com/club.apolo?igshid=YmMyMTA2M2Y="
-                       role="button"
-                       target ="_blank"
-                       ><i class="fab fa-instagram"></i
-                      ></a>
-        
-                    <!-- tiktok -->
-                    <a
-                       class="btn btn-primary btn-floating m-1"
-                       style="background-color: #1c1e1f"
-                       href="https://www.tiktok.com/@club.apolo?_t=8YtMmXggyWc&_r=1"
-                       role="button"
-                       target ="_blank"
-                       ><i class="fab fa-tiktok"></i
-                      ></a>
-                    <!-- whatsapp -->
-                    <a
-                       class="btn btn-primary btn-floating m-1"
-                       style="background-color: #0d9436"
-                       href="https://api.whatsapp.com/send?phone=593997125577&text=hola,%20más%20información%20por%20favor%20"
-                       role="button"
-                       target ="_blank"
-                       ><i class="fab fa-whatsapp"></i
-                      ></a>
-                  </div>
-                </div>
-                <!--Grid row-->
-              </section>
-              <!-- Section: Links -->
-            </div>
-            <!-- Grid container -->
-        
-            <!-- Copyright -->
-            <div
-                 class="text-center p-3"
-                 style="background-color: rgba(0, 0, 0, 0.2)"
-                 >
-              © 2023  Copyright:
-              <a class="text-white" href="#"
-                 >RJ</a
-                >
-            </div>
-            <!-- Copyright -->
-          </footer>
-          <!-- Footer -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item colnav">
+              <a class="nav-link text-white" href="{{ url_for('firma') }}">QUISHPECUADRADO ABOGADOS</a>
+            </li>
+            <li class="nav-item colnav">
+              <a class="nav-link text-white" href="{{ url_for('nosotros') }}">NUESTRO CONOCIMIENTO</a>
+            </li>
+            <li class="nav-item colnav">
+              <a class="nav-link text-white" href="{{ url_for('historia') }}">SERVICIOS</a>
+            </li>
+            <li class="nav-item colnav">
+              <a class="nav-link text-white" href="{{ url_for('historia') }}">NUESTRO EQUIPO</a>
+            </li>
+            <li class="nav-item colnav">
+              <a class="nav-link text-white" href="{{ url_for('contacto') }}">CONTACTANOS</a>
+            </li>
+          </ul>
         </div>
-        <!-- End of .container -->
-        
-    </div>
+      </div>
+    </nav>
 
-</body>
-</html>
+    <div id="sfcm95pk38ws11zdfwdw5bs73jsyryezjhq"></div><script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=m95pk38ws11zdfwdw5bs73jsyryezjhq&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas para tumblr"><img src="https://counter9.stat.ovh/private/contadorvisitasgratis.php?c=m95pk38ws11zdfwdw5bs73jsyryezjhq" border="0" title="contador de visitas para tumblr" alt="contador de visitas para tumblr"></a></noscript>
+
+  <body background="/static/img/fondo11.jpeg">
+     <div class="container">
+      <center><h1></h1></center>
+           {% block content %}{% endblock %}
+           <div class="container my-5">
+            <!-- Footer -->
+            <footer
+                    class="text-center text-lg-start text-white"
+                    style="background-color: #929fba"
+                    >
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                  <!--Grid row-->
+                  <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">
+                        QUISHPECUADRADO 
+                      </h6>
+                      <p>Profesionales del Derecho,  con amplios conocimientos y experiencia en materia: Empresarial, Societario, Penal, Civil, Constitucional y en diversas áreas del Derecho, lo que nos permite brindar asesoramiento y representación legal integral,  conforme a las exigencias actuales con eficiencia y eficacia.</p>
+                    </div>
+                    <!-- Grid column -->
+          
+                    <hr class="w-100 clearfix d-md-none" />
+          
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">ABOGADOS</h6>
+                      <p>
+                        <a href="{{ url_for('firma')}}" class="text-white">LA FIRMA</a>
+                      </p>
+                      <p>
+                        <a class="text-white">NUESTRO CONOCIMIENTO</a>
+                      </p>
+                      <p>
+                        <a class="text-white">SERVICIOS</a>
+                      </p>
+                      <p>
+                        <a class="text-white">NUESTRO EQUIPO</a>
+                      </p>
+                      
+                    </div>
+                    <!-- Grid column -->
+          
+                    <hr class="w-100 clearfix d-md-none" />
+          
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+          
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                      <p><i class="fas fa-home mr-3"></i>Carapungo</p>
+                      <p><i class="fas fa-envelope mr-3"></i>juridico@hotmail.com</p>
+                      <p><i class="fas fa-phone mr-3"></i>0997125577</p>
+                      <p><i class="fas fa-print mr-3"></i> </p>
+                    </div>
+                    <!-- Grid column -->
+          
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Síguenos</h6>
+          
+                      <!-- Facebook -->
+                      <a
+                         class="btn btn-primary btn-floating m-1"
+                         style="background-color: #3b5998"
+                         href="https://www.facebook.com/club.apolo1"
+                         role="button"
+                         target ="_blank"
+                         ><i class="fab fa-facebook-f"></i
+                        ></a>
+          
+                     
+          
+                      <!-- Instagram -->
+                      <a
+                         class="btn btn-primary btn-floating m-1"
+                         style="background-color: #ac2bac"
+                         href="https://instagram.com/club.apolo?igshid=YmMyMTA2M2Y="
+                         role="button"
+                         target ="_blank"
+                         ><i class="fab fa-instagram"></i
+                        ></a>
+          
+                      <!-- tiktok -->
+                      <a
+                         class="btn btn-primary btn-floating m-1"
+                         style="background-color: #1c1e1f"
+                         href="https://www.tiktok.com/@club.apolo?_t=8YtMmXggyWc&_r=1"
+                         role="button"
+                         target ="_blank"
+                         ><i class="fab fa-tiktok"></i
+                        ></a>
+                      <!-- whatsapp -->
+                      <a
+                         class="btn btn-primary btn-floating m-1"
+                         style="background-color: #0d9436"
+                         href="https://api.whatsapp.com/send?phone=593997125577&text=hola,%20más%20información%20por%20favor%20"
+                         role="button"
+                         target ="_blank"
+                         ><i class="fab fa-whatsapp"></i
+                        ></a>
+                    </div>
+                  </div>
+                  <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div
+                   class="text-center p-3"
+                   style="background-color: rgba(0, 0, 0, 0.2)"
+                   >
+                © 2023  Copyright:
+                <a class="text-white" href="#"
+                   >RJ</a
+                  >
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+          </div>
+          <!-- End of .container -->
+          
+      </div>
+  
+  </body>
+  </html>
