@@ -1,0 +1,99 @@
+
+
+
+{% extends "layout1.html" %}
+{% block title %}ESTUDIO JURÍDICO{% endblock %}
+{% block content %}
+<br> <!-- Agregar espacio vacío aquí -->
+<!doctype html>
+<html lang="en">
+  <html>
+    <head>
+      <title>Conocimiento de un Equipo de Profesionales - Estudio Jurídico</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+      <style>
+        .team-img {
+          height: 200px;
+          object-fit: cover;
+        }
+        .card {
+          border: none;
+          transition: all 0.2s ease;
+        }
+        .card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container my-5">
+        <h1 class="text-center mb-5" style="color: white;">Conocimientos Profesionales</h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://source.unsplash.com/featured/?lawyer" class="card-img-top team-img" alt="Abogado">
+              <div class="card-body">
+                <h5 class="card-title">Derecho Civil:</h5>
+                <p class="card-text"> El derecho civil es la rama del derecho que se ocupa de las relaciones entre las personas y sus bienes. Es importante para un estudio jurídico tener un conocimiento profundo del derecho civil, ya que muchas de las disputas legales que se presentan tienen que ver con esta rama del derecho.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://source.unsplash.com/featured/?judge" class="card-img-top team-img" alt="Juez">
+              <div class="card-body">
+                <h5 class="card-title">Derecho Laboral:</h5>
+                <p class="card-text">El derecho laboral se ocupa de las relaciones entre los trabajadores y los empleadores. Un estudio jurídico debe tener un conocimiento sólido del derecho laboral para poder ayudar a sus clientes a resolver conflictos laborales y asesorarlos en cuestiones relacionadas con contratos de trabajo, despidos, indemnizaciones, entre otros.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://source.unsplash.com/featured/?law" class="card-img-top team-img" alt="Leyes">
+              <div class="card-body">
+                <h5 class="card-title">Derecho Mercantil:</h5>
+                <p class="card-text">El derecho mercantil se encarga de regular las relaciones comerciales entre empresas y personas. Un estudio jurídico debe tener un conocimiento amplio del derecho mercantil para poder asesorar a sus clientes en cuestiones relacionadas con contratos comerciales, fusiones y adquisiciones, propiedad intelectual, entre otros.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <h1 class="text-center mb-5" style="color: white;"></h1>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://source.unsplash.com/featured/?lawyer" class="card-img-top team-img" alt="Abogado">
+              <div class="card-body">
+                <h5 class="card-title">Derecho Penal:</h5>
+                <p class="card-text">El derecho penal es la rama del derecho que se ocupa de los delitos y las penas. Un estudio jurídico debe tener un conocimiento sólido del derecho penal para poder ayudar a sus clientes a enfrentar situaciones legales complejas relacionadas con delitos y crímenes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://source.unsplash.com/featured/?judge" class="card-img-top team-img" alt="Juez">
+              <div class="card-body">
+                <h5 class="card-title">Derecho Administrativo:</h5>
+                <p class="card-text">El derecho administrativo se ocupa de las relaciones entre los ciudadanos y la administración pública. Es importante para un estudio jurídico tener un conocimiento sólido del derecho administrativo para poder asesorar a sus clientes en cuestiones relacionadas con permisos, licencias, impuestos, y otras cuestiones que implican la interacción con las autoridades.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://source.unsplash.com/featured/?law" class="card-img-top team-img" alt="Leyes">
+              <div class="card-body">
+                <h5 class="card-title">Derecho Tributario:</h5>
+                <p class="card-text">El derecho tributario se encarga de regular las relaciones entre los ciudadanos y el fisco. Es importante para un estudio jurídico tener un conocimiento amplio del derecho tributario para poder asesorar a sus clientes en cuestiones relacionadas con impuestos, declaraciones fiscales, y otros asuntos tributarios.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+{% endblock %}

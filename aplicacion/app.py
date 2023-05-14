@@ -47,6 +47,13 @@ def test():
 def historia():
     return render_template('historia.html')
 
+@app.route('/equipo')
+def equipo():
+    return render_template('equipo.html')
+
+@app.route('/conocimiento')
+def conocimiento():
+    return render_template('conocimiento.html')
 
 @app.route('/contacto', methods=['GET', 'POST'])
 def contacto():
